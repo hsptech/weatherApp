@@ -1,1 +1,1 @@
-<?php include_once("weatherapp.html"); ?>
+<?php include_once("weatherApp.html"); ?>
