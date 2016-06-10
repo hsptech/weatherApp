@@ -6,6 +6,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="https://raw.githubusercontent.com/hsptech/weatherApp/master/App.js"></script>
 	<script src="https://raw.githubusercontent.com/hsptech/weatherApp/master/bootstrap-angular.js"></script>
 </head>
 
@@ -48,22 +49,6 @@
 		</div>
 
 	</div>
-	<script>
-	var myapp=angular.module('myapp',[]);
-myapp.controller('mainController',function($scope,$http){
-    $scope.display=function(){
-        //var weatherurl="http://api.openweathermap.org/data/2.5/weather?q="+vm.city+"&APPID=e7fdb896e985f4654673ec880d77aee2";
-    $http.get("http://api.openweathermap.org/data/2.5/weather?q="+$scope.city+"&units=metric&APPID=e7fdb896e985f4654673ec880d77aee2").then(function(response){
-        $scope.temperature=response.data;
-        
-   
-      
-    });
-    
-    }; 
-    
-});
-</script>
 </body>
 
 </html>
